@@ -1,0 +1,257 @@
+@font-face {
+  font-family: suecaslabheavy;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Heavy.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Heavy.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Heavy.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Heavy.svg#SuecaSlab-Heavy")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecananobold;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Bold.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Bold.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Bold.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Bold.svg#SuecaNano-Bold")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslabthin;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Thin.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Thin.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Thin.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Thin.svg#SuecaSlab-Thin")
+      format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecananolight;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Light.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Light.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Light.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Light.svg#SuecaNano-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslablight;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Light.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Light.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Light.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Light.svg#SuecaSlab-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslabmedium;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Medium.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.lanacion.com.ar/pf/resources/fonts/suecaslab-medium-webfont.woff2?d=855")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Medium.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Medium.svg#SuecaSlab-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslabbold;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Bold.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.lanacion.com.ar/pf/resources/fonts/suecaslab-bold-webfont.woff2?d=855")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Bold.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Bold.svg#SuecaSlab-Bold")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecananoheavy;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Heavy.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Heavy.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Heavy.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Heavy.svg#SuecaNano-Heavy")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslabextrabold;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extrabold.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extrabold.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extrabold.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extrabold.svg#SuecaSlab-Extrabold")
+      format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecanano;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Regular.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Regular.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Regular.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Regular.svg#SuecaNano-Regular")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslab;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Regular.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Regular.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Regular.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Regular.svg#SuecaSlab-Regular")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecananosemibold;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Semibold.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Semibold.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Semibold.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Semibold.svg#SuecaNano-Semibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecananomedium;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Medium.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Medium.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Medium.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaNano-Medium.svg#SuecaNano-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslabextralight;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extralight.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extralight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extralight.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extralight.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Extralight.svg#SuecaSlab-Extralight")
+      format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: suecaslabsemibold;
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Semibold.eot");
+  src: url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Semibold.woff2")
+      format("woff2"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Semibold.woff")
+      format("woff"),
+    url("https://especialess3.lanacion.com.ar/fonts/SuecaSlab-Semibold.svg#SuecaSlab-Semibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prumo Deck";
+  src: url("PrumoDeck-Medium.woff2") format("woff2"),
+    url("PrumoDeck-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prumo Deck";
+  src: url("PrumoDeck-Black.woff2") format("woff2"),
+    url("PrumoDeck-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prumo Deck";
+  src: url("PrumoDeck-BlackItalic.woff2") format("woff2"),
+    url("PrumoDeck-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prumo Deck";
+  src: url("PrumoDeck-MediumItalic.woff2") format("woff2"),
+    url("PrumoDeck-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
