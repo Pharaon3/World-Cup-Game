@@ -15,11 +15,30 @@ var stateGS = 'NON';
 var stateHF = 'NON';
 var stateHS = 'NON';
 
+
+var xxx = [
+['Jack', 24],
+['Sara', 23], 
+['Peter', 24]
+];
+
+
 function selectFirstInGroup(country) {
+
+// access the first item 
+console.log(xxx[0]); // ["Jack", 24]
+
+// access the first item of the first inner array
+console.log(xxx[0][0]); // Jack
+
+// access the second item of the third inner array
+console.log(xxx[2][1]); // 24
+
+
   console.log('selectFirstInGroup: ', country);
   // Group A BEGINE
   console.log('stateAF: ', stateAF);
-  console.log('stateAS: ', stateAS);  
+  console.log('stateAS: ', stateAS);
   if(country == 'Qatar'){
     if(stateAF == 'Qatar') return;
     stateAF = 'Qatar';
