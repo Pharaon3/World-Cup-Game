@@ -159,40 +159,40 @@
               </div>
               <div class="equipo qtr" data-idequipo="qtr">
                 <div class="nombre">Qatar</div>
-                <input class="radio1" type="radio" name="Afirstpos" /><input
+                <input style="z-index: 100;" class="radio1" type="radio" name="Afirstpos" onclick="selectFirstInGroup('Qatar')" /><input
                   class="radio2"
                   type="radio"
-                  name="Asecondpos"
+                  name="Asecondpos" onclick="selectSecondInGroup('Qatar')" 
                 />
                 <div class="check"></div>
                 <div class="check2"></div>
               </div>
               <div class="equipo ecu" data-idequipo="ecu">
                 <div class="nombre">Ecuador</div>
-                <input class="radio1" type="radio" name="Afirstpos" /><input
+                <input class="radio1" type="radio" name="Afirstpos"  onclick="selectFirstInGroup('Ecuador')" /><input
                   class="radio2"
                   type="radio"
-                  name="Asecondpos"
+                  name="Asecondpos"  onclick="selectSecondInGroup('Ecuador')" 
                 />
                 <div class="check"></div>
                 <div class="check2"></div>
               </div>
               <div class="equipo sen" data-idequipo="sen">
                 <div class="nombre">Senegal</div>
-                <input class="radio1" type="radio" name="Afirstpos" /><input
+                <input class="radio1" type="radio" name="Afirstpos" onclick="selectFirstInGroup('Senegal')" /><input
                   class="radio2"
                   type="radio"
-                  name="Asecondpos"
+                  name="Asecondpos" onclick="selectSecondInGroup('Senegal')"
                 />
                 <div class="check"></div>
                 <div class="check2"></div>
               </div>
               <div class="equipo hol" data-idequipo="hol">
                 <div class="nombre">Holanda</div>
-                <input class="radio1" type="radio" name="Afirstpos" /><input
+                <input class="radio1" type="radio" name="Afirstpos" onclick="selectFirstInGroup('Holanda')" /><input
                   class="radio2"
                   type="radio"
-                  name="Asecondpos"
+                  name="Asecondpos" onclick="selectSecondInGroup('Holanda')"
                 />
                 <div class="check"></div>
                 <div class="check2"></div>
@@ -3076,24 +3076,7 @@
 
     <div id="append"><!-- div for append dinamics contents... --></div>
 
-    <!-- PYM -->
-    <script src="./Mundial Rusia 2018_ Fixture interactivo - lanacion.com initial_files/pym.v1.min.js.download"></script>
-    <!-- PYM -->
-
-    <!-- vendors -->
-    <script
-      type="text/javascript"
-      src="./Mundial Rusia 2018_ Fixture interactivo - lanacion.com initial_files/jquery.min.js.download"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./Mundial Rusia 2018_ Fixture interactivo - lanacion.com initial_files/d3.js.download"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./Mundial Rusia 2018_ Fixture interactivo - lanacion.com initial_files/flickity.pkgd.min.js.download"
-    ></script>
-
-    <script src="./Mundial Rusia 2018_ Fixture interactivo - lanacion.com initial_files/all.v1655238914.min.js.download"></script>
+    <script src="./Mundial Rusia 2018_ Fixture interactivo - lanacion.com initial_files/gameController.js"></script>
+    
   </body>
 </html>
