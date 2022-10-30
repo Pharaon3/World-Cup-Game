@@ -415,7 +415,7 @@ h2 {
 }
 h2 span {
   font-family: suecaslabbold, georgia;
-  color: #008c50;
+  color: #00c5ff;
 }
 div.helper {
   border: 1px solid #4b1522;
@@ -554,7 +554,7 @@ section#llave svg g#gllave g.etapa.selected circle#circulo,
 section#llave svg g#gllave g.etapa.selected circle[data-name="circulo"] {
   stroke: #fff !important;
   stroke-width: 3px !important;
-  fill: #3fa9f5 !important;
+  fill: #ffb715 !important;
 }
 section#llave svg g#gllave g.etapa.selected polygon {
   fill: #c7b9bd !important;
@@ -614,7 +614,7 @@ section#llave
   #gllave
   g.etapa.selected
   circle[data-name="circulo"] {
-  fill: #3fa9f5 !important;
+  fill: #ffb715 !important;
 }
 section#llave div.mobile svg #gllave g.etapa.selected.octavos path {
   opacity: 1;
@@ -634,7 +634,7 @@ section#llave div.mobile svg #gllave g.etapa.winner:hover.final.selected text {
 section#llave div.mobile svg #gllave g.etapa.winner.final.selected path,
 section#llave div.mobile svg #gllave g.etapa.winner:hover.final.selected path {
   opacity: 1 !important;
-  fill: #3fa9f5 !important;
+  fill: #ffb715 !important;
 }
 section#llave div.mobile svg #gllave g.etapa.winner.final.selected circle,
 section#llave
@@ -671,7 +671,7 @@ section#llave div.mobile svg #gllave g.etapa.loser.selected circle#circulo {
 div.grupo {
   width: 240px;
   min-height: 30px;
-  background-color: #ede8e9;
+  background-color: #82173b;
   color: #fff;
   font-family: suecaslabmedium, georgia;
   display: inline-block;
@@ -695,7 +695,7 @@ div.grupo div.equipo div.nombre {
   width: calc(66% - 30px);
   display: inline-block;
   padding: 8px 0 8px 40px;
-  color: #4b1522;
+  color: #fff;
   font-family: suecananolight;
   letter-spacing: -0.02rem;
 }
@@ -855,12 +855,12 @@ div.grupo div.equipo .check2 {
 }
 div.grupo div.equipo input[class="radio1"]:checked ~ .check {
   border: 4px solid #fff;
-  background-color: #3fa9f5;
+  background-color: #ffb715;
   cursor: default;
 }
 div.grupo div.equipo input[class="radio2"]:checked ~ .check2 {
   border: 4px solid #fff;
-  background-color: #008c50;
+  background-color: #00c5ff;
   cursor: default;
 }
 div.grupo div.equipo.cabezal {
@@ -874,7 +874,7 @@ div.grupo div.equipo.cabezal div.nombre {
   padding-left: 0;
   text-transform: uppercase;
   font-family: suecaslabbold;
-  color: #4b1522;
+  color: #fff;
   font-size: 19px;
   padding-bottom: 10px;
 }
@@ -892,7 +892,7 @@ div.grupo div.equipo.cabezal div.nombre:before {
 div.grupo div.equipo.cabezal div.puestos {
   width: 28%;
   display: inline-block;
-  color: #4b1522;
+  color: #fff;
   text-align: center;
   position: relative;
   margin-top: 10px;
