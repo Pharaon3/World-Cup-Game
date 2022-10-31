@@ -11,6 +11,7 @@ function winGrupo(group, place, country) {
     setOctavosEmpty(grupo2octavosGroup(group, 1 - place), grupo2octavosCountry(group, 1 - place));
     setOctavosProcess(grupo2octavosGroup(group, 1 - place), 1 - grupo2octavosCountry(group, 1 - place));
   }
+  notFinished();
 }
 function setOctavos(octavosGroupId, octavosCountryId, group, country){
   // Set Octavos Element Part
@@ -65,13 +66,13 @@ function setOctavosEmpty(octavosGroupId, octavosCountryId){
 function winOctavos(octavosGroupId, octavosCountryId) {
   // check if can win this octavos
   if(octavosWinner[octavosGroupId] == octavosCountryId)return;
-  octavosWinner[octavosGroupId] = octavosCountryId;
   var grupoId = octavos2grupoGroup(octavosGroupId, octavosCountryId);
   var grupoCountry = octavos2grupoCountry(octavosGroupId, octavosCountryId);
   var opGrupoId = octavos2grupoGroup(octavosGroupId, 1 - octavosCountryId);
   var opGrupoCountry = octavos2grupoCountry(octavosGroupId, 1 - octavosCountryId);
   if(!leagueWinner[grupoId][grupoCountry])return;
   if(!leagueWinner[opGrupoId][opGrupoCountry])return;
+  octavosWinner[octavosGroupId] = octavosCountryId;
   // win octavos part
   var octavosElement = getOctavosElement(octavosGroupId, octavosCountryId);
   var rectangle = octavosElement.getElementsByTagName("rect")[0];
@@ -82,6 +83,7 @@ function winOctavos(octavosGroupId, octavosCountryId) {
   setCuartosProcess(octavosGroupId);
   var opOctavosGroupId = -octavosGroupId + 1 + 4 * Math.floor(octavosGroupId / 2);
   setCuartosProcess(opOctavosGroupId);
+  notFinished();
 }
 function loseOctavos(octavosGroupId, octavosCountryId) {
   // win octavos part
@@ -127,6 +129,7 @@ function winCuartos(cuartosId) {
   setSemifinalProcess(semifinalId);
   var opSemifinalId = -semifinalId + 1 + 4 * Math.floor(semifinalId / 2);
   setSemifinalProcess(opSemifinalId);
+  notFinished();
 }
 function loseCuartos(cuartosId) {
   var cuartosElement = getCuartosElement(cuartosId);
@@ -203,6 +206,7 @@ function winSemifinal(semifinalId) {
   var opFinalId = -finalId + 1 + 4 * Math.floor(finalId / 2);
   setFinalProcess(finalId);
   setFinalProcess(opFinalId);
+  notFinished();
 }
 function loseSemifinal(semifinalId) {
   var semifinalElement = getSemifinalElement(semifinalId);
@@ -288,6 +292,11 @@ function winFinal(finalId) {
   text = semifinalElement.getElementsByTagName("text")[0];
   rectangle.style.fill = firstRectColor;
   text.style.fill = firstTextColor;
+  var opSemifinalId = -semifinalId + 1 + 4 * Math.floor(semifinalId / 2);
+  semifinalElement = getSemifinalElement(opSemifinalId);
+  rectangle = semifinalElement.getElementsByTagName("rect")[0];
+  text = semifinalElement.getElementsByTagName("text")[0];
+  rectangle.style.fill = winnerRectColor;
   var cuartosElement = getCuartosElement(cuartosId);
   rectangle = cuartosElement.getElementsByTagName("rect")[0];
   text = cuartosElement.getElementsByTagName("text")[0];
@@ -298,6 +307,7 @@ function winFinal(finalId) {
   text = octavosElement.getElementsByTagName("text")[0];
   rectangle.style.fill = firstRectColor;
   text.style.fill = firstTextColor;
+
   var championCountry = countryFullNames[group][country - 1];
   var championString = document.getElementById('champion');
   championString.innerHTML = '¡' + championCountry;
@@ -316,6 +326,11 @@ function loseFinal(finalId) {
   var semifinalElement = getSemifinalElement(semifinalId);
   rectangle = semifinalElement.getElementsByTagName("rect")[0];
   rectangle.style.fill = secondRectColor;
+  var opSemifinalId = -semifinalId + 1 + 4 * Math.floor(semifinalId / 2);
+  semifinalElement = getSemifinalElement(opSemifinalId);
+  rectangle = semifinalElement.getElementsByTagName("rect")[0];
+  text = semifinalElement.getElementsByTagName("text")[0];
+  rectangle.style.fill = winnerRectColor;
   var cuartosId = cuartosWinner[semifinalId];
   var cuartosElement = getCuartosElement(cuartosId);
   rectangle = cuartosElement.getElementsByTagName("rect")[0];
@@ -358,6 +373,62 @@ function setFinalProcess(finalId) {
   text.style.fill = textColor;
   text.innerHTML = countryNames[group][country - 1];
   circle.style.fill = initialCircleColor;
+}
+function notFinished() {
+  document.getElementById('champions').style.display = 'none';
+  document.getElementById('worldcup').style.opacity = 0.1;
+
+  for (let i = 0; i < 16; i++) {
+    var octavosGroupId = Math.floor(i / 2);
+    var octavosCountryId = i - 2 * octavosGroupId;
+    var octavosElement = getOctavosElement(octavosGroupId, octavosCountryId);
+    var rectangle = octavosElement.getElementsByTagName("rect")[0];
+    var circle = octavosElement.getElementsByTagName("circle")[0];
+    var text = octavosElement.getElementsByTagName("text")[0];
+    text.style.fill = textColor;
+    var grupId = octavos2grupoGroup(octavosGroupId, octavosCountryId);
+    var countryId = octavos2grupoCountry(octavosGroupId, octavosCountryId);
+    if(leagueWinner[grupId][countryId] == 0) rectangle.style.fill = initialRectColor;
+    else {
+      if(octavosWinner[octavosGroupId] == octavosCountryId) rectangle.style.fill = winnerRectColor;
+      else rectangle.style.fill = loserRectColor;
+    }
+  }
+  for (let i = 0; i < 8; i++) {
+    var cuartosId = i;
+    var cuartosElement = getCuartosElement(cuartosId);
+    var rectangle = cuartosElement.getElementsByTagName("rect")[0];
+    var circle = cuartosElement.getElementsByTagName("circle")[0];
+    var text = cuartosElement.getElementsByTagName("text")[0];
+    text.style.fill = textColor;
+    if(octavosWinner[cuartosId] == -1) rectangle.style.fill = initialRectColor;
+    else {
+      if(cuartosWinner[Math.floor(cuartosId / 2)] == cuartosId) rectangle.style.fill = winnerRectColor;
+      else rectangle.style.fill = loserRectColor;
+    }
+  }
+  for (let i = 0; i < 4; i++) {
+    var semifinalId = i;
+    var semifinalElement = getSemifinalElement(semifinalId);
+    var rectangle = semifinalElement.getElementsByTagName("rect")[0];
+    var circle = semifinalElement.getElementsByTagName("circle")[0];
+    var text = semifinalElement.getElementsByTagName("text")[0];
+    text.style.fill = textColor;
+    if(cuartosWinner[semifinalId] == -1) rectangle.style.fill = initialRectColor;
+    else {
+      if(semifinalWinner[Math.floor(semifinalId / 2)] == semifinalId) rectangle.style.fill = winnerRectColor;
+      else rectangle.style.fill = loserRectColor;
+    }
+  }
+  for (let i = 0; i < 2; i++) {
+    var finalId = i;
+    var finalElement = getFinalElement(finalId);
+    var rectangle = finalElement.getElementsByTagName("rect")[0];
+    var circle = finalElement.getElementsByTagName("circle")[0];
+    var text = finalElement.getElementsByTagName("text")[0];
+    text.style.fill = textColor;
+    rectangle.style.fill = initialRectColor;
+  }
 }
 function getGtagId(grupoId, countryId){
   var gTagId = '_';
