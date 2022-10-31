@@ -840,10 +840,10 @@ div.grupo div.equipo input[class="radio2"] {
 div.grupo div.equipo .check,
 div.grupo div.equipo .check2 {
   background-color: #ede8e9;
-  border: 4px solid;
+  /*border: 4px solid;*/
   border-radius: 100%;
-  height: 13px;
-  width: 13px;
+  height: 21px;
+  width: 21px;
   position: absolute;
   top: 7px;
   right: 43px;
@@ -854,12 +854,12 @@ div.grupo div.equipo .check2 {
   right: 7px;
 }
 div.grupo div.equipo input[class="radio1"]:checked ~ .check {
-  border: 4px solid #fff;
+  /*border: 4px solid #fff;*/
   background-color: #ffb715;
   cursor: default;
 }
 div.grupo div.equipo input[class="radio2"]:checked ~ .check2 {
-  border: 4px solid #fff;
+  /*border: 4px solid #fff;*/
   background-color: #00c5ff;
   cursor: default;
 }
