@@ -717,112 +717,112 @@ div.grupo div.equipo div.nombre.active {
   letter-spacing: -0.02rem;
 }
 div.grupo div.equipo.qtr div.nombre:before {
-  background-image: url('./TS/qtr.png');
+  background-image: url('../img/TS/qtr.png');
 }
 div.grupo div.equipo.bra div.nombre:before {
-  background-image: url('./TS/bra.png');
+  background-image: url('../img/TS/bra.png');
 }
 div.grupo div.equipo.uru div.nombre:before {
-  background-image: url('./TS/uru.png');
+  background-image: url('../img/TS/uru.png');
 }
 div.grupo div.equipo.arg div.nombre:before {
-  background-image: url('./TS/arg.png');
+  background-image: url('../img/TS/arg.png');
 }
 div.grupo div.equipo.col div.nombre:before {
   background-image: url(../img/colombia.svg);
 }
 div.grupo div.equipo.mex div.nombre:before {
-  background-image: url('./TS/mex.png');
+  background-image: url('../img/TS/mex.png');
 }
 div.grupo div.equipo.can div.nombre:before {
-  background-image: url('./TS/can.png');
+  background-image: url('../img/TS/can.png');
 }
 div.grupo div.equipo.eae div.nombre:before {
   background-image: url(https://buckets3.glanacion.com/lntools/anexos/fotos/24/42224.svg);
 }
 div.grupo div.equipo.ale div.nombre:before {
-  background-image: url('./TS/ale.png');
+  background-image: url('../img/TS/ale.png');
 }
 div.grupo div.equipo.ing div.nombre:before {
-  background-image: url('./TS/ing.png');
+  background-image: url('../img/TS/ing.png');
 }
 div.grupo div.equipo.bel div.nombre:before {
-  background-image: url('./TS/bel.png');
+  background-image: url('../img/TS/bel.png');
 }
 div.grupo div.equipo.esp div.nombre:before {
-  background-image: url('./TS/esp.png');
+  background-image: url('../img/TS/esp.png');
 }
 div.grupo div.equipo.crn div.nombre:before {
   background-image: url(https://buckets3.glanacion.com/lntools/anexos/fotos/24/42224.svg);
 }
 div.grupo div.equipo.cam div.nombre:before {
-  background-image: url('./TS/cam.png');
+  background-image: url('../img/TS/cam.png');
 }
 div.grupo div.equipo.ser div.nombre:before {
-  background-image: url('./TS/ser.png');
+  background-image: url('../img/TS/ser.png');
 }
 div.grupo div.equipo.por div.nombre:before {
-  background-image: url('./TS/por.png');
+  background-image: url('../img/TS/por.png');
 }
 div.grupo div.equipo.fra div.nombre:before {
-  background-image: url('./TS/fra.png');
+  background-image: url('../img/TS/fra.png');
 }
 div.grupo div.equipo.sui div.nombre:before {
-  background-image: url('./TS/sui.png');
+  background-image: url('../img/TS/sui.png');
 }
 div.grupo div.equipo.cro div.nombre:before {
-  background-image: url('./TS/cro.png');
+  background-image: url('../img/TS/cro.png');
 }
 div.grupo div.equipo.pol div.nombre:before {
-  background-image: url('./TS/pol.png');
+  background-image: url('../img/TS/pol.png');
 }
 div.grupo div.equipo.irn div.nombre:before {
-  background-image: url('./TS/irn.png');
+  background-image: url('../img/TS/irn.png');
 }
 div.grupo div.equipo.jpn div.nombre:before {
-  background-image: url('./TS/jpn.png');
+  background-image: url('../img/TS/jpn.png');
 }
 div.grupo div.equipo.cor div.nombre:before {
-  background-image: url('./TS/cor.png');
+  background-image: url('../img/TS/cor.png');
 }
 div.grupo div.equipo.ghn div.nombre:before {
-  background-image: url('./TS/ghn.png');
+  background-image: url('../img/TS/ghn.png');
 }
 div.grupo div.equipo.ecu div.nombre:before {
-  background-image: url('./TS/ecu.png');
+  background-image: url('../img/TS/ecu.png');
 }
 div.grupo div.equipo.sen div.nombre:before {
-  background-image: url('./TS/sen.png');
+  background-image: url('../img/TS/sen.png');
 }
 div.grupo div.equipo.mar div.nombre:before {
-  background-image: url('./TS/mar.png');
+  background-image: url('../img/TS/mar.png');
 }
 div.grupo div.equipo.tun div.nombre:before {
-  background-image: url('./TS/tun.png');
+  background-image: url('../img/TS/tun.png');
 }
 div.grupo div.equipo.usa div.nombre:before {
-  background-image: url('./TS/usa.png');
+  background-image: url('../img/TS/usa.png');
 }
 div.grupo div.equipo.hol div.nombre:before {
-  background-image: url('./TS/hol.png');
+  background-image: url('../img/TS/hol.png');
 }
 div.grupo div.equipo.eug div.nombre:before {
   background-image: url(https://buckets3.glanacion.com/lntools/anexos/fotos/24/42224.svg);
 }
 div.grupo div.equipo.din div.nombre:before {
-  background-image: url('./TS/din.png');
+  background-image: url('../img/TS/din.png');
 }
 div.grupo div.equipo.ara div.nombre:before {
-  background-image: url('./TS/ara.png');
+  background-image: url('../img/TS/ara.png');
 }
 div.grupo div.equipo.aus div.nombre:before {
-  background-image: url('./TS/aus.png');
+  background-image: url('../img/TS/aus.png');
 }
 div.grupo div.equipo.cri div.nombre:before {
-  background-image: url('./TS/cri.png');
+  background-image: url('../img/TS/cri.png');
 }
 div.grupo div.equipo.gal div.nombre:before {
-  background-image: url('./TS/gal.png');
+  background-image: url('../img/TS/gal.png');
 }
 div.grupo div.equipo input {
   position: absolute;
@@ -1398,10 +1398,10 @@ div.logo-ln {
 /*# sourceMappingURL=all.v1655238914.min.css.map */
 @font-face {
   font-family: "CircularStd-Black";
-  src: url("./CircularStd-Black.ttf");
+  src: url("../fonts/CircularStd-Black.ttf");
 }
 
 @font-face {
   font-family: "CircularStd-Book";
-  src: url("./CircularStd-Book.ttf");
+  src: url("../fonts/CircularStd-Book.ttf");
 }

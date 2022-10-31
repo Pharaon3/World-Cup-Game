@@ -21,7 +21,7 @@ function setOctavos(octavosGroupId, octavosCountryId, group, country){
   var text = octavosElement.getElementsByTagName("text")[0];
   var image = octavosElement.getElementsByTagName("image")[0];
   var circle = octavosElement.getElementsByTagName("circle")[0];
-  var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
+  var imageUrl = './img/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
   text.style.fill = textColor;
@@ -163,7 +163,7 @@ function setCuartosProcess(cuartosId){
   var group = octavos2grupoGroup(cuartosId, octavosWinner[cuartosId]);
   var place = octavos2grupoCountry(cuartosId, octavosWinner[cuartosId]);
   var country = leagueWinner[group][place];
-  var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
+  var imageUrl = './img/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
   text.style.fill = textColor;
@@ -191,7 +191,7 @@ function winSemifinal(semifinalId) {
   var group = octavos2grupoGroup(cuartosId, octavosWinner[cuartosId]);
   var place = octavos2grupoCountry(cuartosId, octavosWinner[cuartosId]);
   var country = leagueWinner[group][place];
-  var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
+  var imageUrl = './img/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = winnerRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
   text.style.fill = textColor;
@@ -245,7 +245,7 @@ function setSemifinalProcess(semifinalId) {
   var group = octavos2grupoGroup(cuartosId, octavosWinner[cuartosId]);
   var place = octavos2grupoCountry(cuartosId, octavosWinner[cuartosId]);
   var country = leagueWinner[group][place];
-  var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
+  var imageUrl = './img/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
   text.style.fill = textColor;
@@ -273,7 +273,7 @@ function winFinal(finalId) {
   var group = octavos2grupoGroup(cuartosId, octavosWinner[cuartosId]);
   var place = octavos2grupoCountry(cuartosId, octavosWinner[cuartosId]);
   var country = leagueWinner[group][place];
-  var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
+  var imageUrl = './img/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = winnerRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
   text.style.fill = textColor;
@@ -352,7 +352,7 @@ function setFinalProcess(finalId) {
   var group = octavos2grupoGroup(cuartosId, octavosWinner[cuartosId]);
   var place = octavos2grupoCountry(cuartosId, octavosWinner[cuartosId]);
   var country = leagueWinner[group][place];
-  var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
+  var imageUrl = './img/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
   text.style.fill = textColor;
