@@ -8,6 +8,7 @@ function selectWinner(group, place, country) {
 
   if(leagueWinner[group, place] == country) return;
   leagueWinner[group, place] = country;
+  selectInitialKnockout(group, place, country);
   if(leagueWinner[group, 1 - place] == country) {
     clearSelection(group, 1 - place);
     leagueWinner[group, 1 - place] = 0;
@@ -31,4 +32,22 @@ function clearSelection(group, place) {
   console.log('clearGroup: ', clearGroup);
   for(var i=0;i<clearGroup.length;i++)
     clearGroup[i].checked = false; 
+  console.log('clearSelection END');
+}
+
+function selectInitialKnockout(group, place, country) {
+  console.log('selectInitialKnockout BEGINE');
+  var Alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+  var groupName = Alphabet[group];
+  var className = "_" + (place + 1) + groupName;
+  console.log('className: ', className);
+    var gTag = document.getElementById(className);
+    gTag.class="etapa active";
+    var rectangle = gTag.getElementsByTagName("rect")[0];
+    var text = gTag.getElementsByTagName("text")[0];
+    text.innerHTML = "TMP";
+    text.style.color = "#000";
+    // rectangle.style.fill = '#dfc5ce';
+    console.log('rectangle', rectangle);
+  console.log('selectInitialKnockout END');
 }
