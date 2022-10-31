@@ -27,7 +27,9 @@ function selectOctavosLoser(octavosGroup, octavosCountry){
 	loser.getElementsByTagName("rect")[0].style.fill = blankRectColor;
   	console.log('selectOctavosLoser END');
 }
-
+function clearOctavos(grupoId, countryId){
+	
+}
 
 function loserGroup(winnerGroup){
 	return 1 - winnerGroup + 4 * Math.floor(winnerGroup / 2);
