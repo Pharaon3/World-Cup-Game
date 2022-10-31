@@ -839,11 +839,11 @@ div.grupo div.equipo input[class="radio2"] {
 }
 div.grupo div.equipo .check,
 div.grupo div.equipo .check2 {
-  background-color: #ede8e9;
-  /*border: 4px solid;*/
+  /*background-color: #ede8e9;*/
+  border: 1px solid;
   border-radius: 100%;
-  height: 21px;
-  width: 21px;
+  height: 19px;
+  width: 19px;
   position: absolute;
   top: 7px;
   right: 43px;
