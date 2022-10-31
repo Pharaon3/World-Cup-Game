@@ -53,7 +53,8 @@ function selectInitialKnockout(group, place, country) {
   var className = "_" + (place + 1) + groupName;
   console.log('className: ', className);
     var gTag = document.getElementById(className);
-    gTag.class="etapa active";
+    gTag.classList.add('active');
+    // gTag.classList.remove('MyClass');
     var rectangle = gTag.getElementsByTagName("rect")[0];
     var text = gTag.getElementsByTagName("text")[0];
     var image = gTag.getElementsByTagName("image")[0];
@@ -73,7 +74,7 @@ function clearInitialKnockout(group, place) {
   var className = "_" + (place + 1) + groupName;
   console.log('className: ', className);
     var gTag = document.getElementById(className);
-    gTag.class="etapa active";
+    gTag.classList.remove('active');
     var rectangle = gTag.getElementsByTagName("rect")[0];
     var text = gTag.getElementsByTagName("text")[0];
     var image = gTag.getElementsByTagName("image")[0];
