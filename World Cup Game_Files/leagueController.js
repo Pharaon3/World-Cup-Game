@@ -16,6 +16,7 @@ function selectWinner(group, place, country) {
 
   console.log('leagueWinner[', group, ',', place,']: ', leagueWinner[group, place]);
   console.log('leagueWinner[', group, ',', 1 - place,']: ', leagueWinner[group, 1 - place]);
+  console.log('leagueWinner: ', leagueWinner);
   console.log('selectWinner END');
 }
 
@@ -38,6 +39,15 @@ function clearSelection(group, place) {
 function selectInitialKnockout(group, place, country) {
   console.log('selectInitialKnockout BEGINE');
   var Alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+  var countryNames = [
+                    ['qtr', 'ecu', 'sen', 'hol'],
+                    ['ing', 'irn', 'usa', 'gal'],
+                    ['arg', 'ara', 'mex', 'pol'],
+                    ['fra', 'aus', 'din', 'tun'],
+                    ['esp', 'cri', 'ale', 'jpn'],
+                    ['bel', 'can', 'mar', 'cro'],
+                    ['bra', 'ser', 'sui', 'cam'],
+                    ['por', 'ghn', 'uru', 'cor']];
   var groupName = Alphabet[group];
   var className = "_" + (place + 1) + groupName;
   console.log('className: ', className);
@@ -45,9 +55,13 @@ function selectInitialKnockout(group, place, country) {
     gTag.class="etapa active";
     var rectangle = gTag.getElementsByTagName("rect")[0];
     var text = gTag.getElementsByTagName("text")[0];
-    text.innerHTML = "TMP";
+    var image = gTag.getElementsByTagName("image")[0];
+    text.innerHTML = countryNames[group][country - 1];
+    var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png'
+    image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
     text.style.color = "#000";
     // rectangle.style.fill = '#dfc5ce';
     console.log('rectangle', rectangle);
+    console.log('image', image);
   console.log('selectInitialKnockout END');
 }

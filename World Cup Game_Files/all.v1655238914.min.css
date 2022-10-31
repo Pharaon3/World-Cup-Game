@@ -716,112 +716,112 @@ div.grupo div.equipo div.nombre.active {
   letter-spacing: -0.02rem;
 }
 div.grupo div.equipo.qtr div.nombre:before {
-  background-image: url('./T-shirts/qat.png');
+  background-image: url('./TS/qtr.png');
 }
 div.grupo div.equipo.bra div.nombre:before {
-  background-image: url('./T-shirts/bra.png');
+  background-image: url('./TS/bra.png');
 }
 div.grupo div.equipo.uru div.nombre:before {
-  background-image: url('./T-shirts/uru.png');
+  background-image: url('./TS/uru.png');
 }
 div.grupo div.equipo.arg div.nombre:before {
-  background-image: url('./T-shirts/arg.png');
+  background-image: url('./TS/arg.png');
 }
 div.grupo div.equipo.col div.nombre:before {
   background-image: url(../img/colombia.svg);
 }
 div.grupo div.equipo.mex div.nombre:before {
-  background-image: url('./T-shirts/mex.png');
+  background-image: url('./TS/mex.png');
 }
 div.grupo div.equipo.can div.nombre:before {
-  background-image: url('./T-shirts/can.png');
+  background-image: url('./TS/can.png');
 }
 div.grupo div.equipo.eae div.nombre:before {
   background-image: url(https://buckets3.glanacion.com/lntools/anexos/fotos/24/42224.svg);
 }
 div.grupo div.equipo.ale div.nombre:before {
-  background-image: url('./T-shirts/ale.png');
+  background-image: url('./TS/ale.png');
 }
 div.grupo div.equipo.ing div.nombre:before {
-  background-image: url('./T-shirts/ing.png');
+  background-image: url('./TS/ing.png');
 }
 div.grupo div.equipo.bel div.nombre:before {
-  background-image: url('./T-shirts/bel.png');
+  background-image: url('./TS/bel.png');
 }
 div.grupo div.equipo.esp div.nombre:before {
-  background-image: url('./T-shirts/esp.png');
+  background-image: url('./TS/esp.png');
 }
 div.grupo div.equipo.crn div.nombre:before {
   background-image: url(https://buckets3.glanacion.com/lntools/anexos/fotos/24/42224.svg);
 }
 div.grupo div.equipo.cam div.nombre:before {
-  background-image: url('./T-shirts/cam.png');
+  background-image: url('./TS/cam.png');
 }
 div.grupo div.equipo.ser div.nombre:before {
-  background-image: url('./T-shirts/ser.png');
+  background-image: url('./TS/ser.png');
 }
 div.grupo div.equipo.por div.nombre:before {
-  background-image: url('./T-shirts/por.png');
+  background-image: url('./TS/por.png');
 }
 div.grupo div.equipo.fra div.nombre:before {
-  background-image: url('./T-shirts/fra.png');
+  background-image: url('./TS/fra.png');
 }
 div.grupo div.equipo.sui div.nombre:before {
-  background-image: url('./T-shirts/sui.png');
+  background-image: url('./TS/sui.png');
 }
 div.grupo div.equipo.cro div.nombre:before {
-  background-image: url('./T-shirts/cro.png');
+  background-image: url('./TS/cro.png');
 }
 div.grupo div.equipo.pol div.nombre:before {
-  background-image: url('./T-shirts/pol.png');
+  background-image: url('./TS/pol.png');
 }
 div.grupo div.equipo.irn div.nombre:before {
-  background-image: url('./T-shirts/ira.png');
+  background-image: url('./TS/irn.png');
 }
 div.grupo div.equipo.jpn div.nombre:before {
-  background-image: url('./T-shirts/jap.png');
+  background-image: url('./TS/jpn.png');
 }
 div.grupo div.equipo.cor div.nombre:before {
-  background-image: url('./T-shirts/cor.png');
+  background-image: url('./TS/cor.png');
 }
 div.grupo div.equipo.ghn div.nombre:before {
-  background-image: url('./T-shirts/gha.png');
+  background-image: url('./TS/ghn.png');
 }
 div.grupo div.equipo.ecu div.nombre:before {
-  background-image: url('./T-shirts/ecu.png');
+  background-image: url('./TS/ecu.png');
 }
 div.grupo div.equipo.sen div.nombre:before {
-  background-image: url('./T-shirts/sen.png');
+  background-image: url('./TS/sen.png');
 }
 div.grupo div.equipo.mar div.nombre:before {
-  background-image: url('./T-shirts/mar.png');
+  background-image: url('./TS/mar.png');
 }
 div.grupo div.equipo.tun div.nombre:before {
-  background-image: url('./T-shirts/tun.png');
+  background-image: url('./TS/tun.png');
 }
 div.grupo div.equipo.usa div.nombre:before {
-  background-image: url('./T-shirts/eeu.png');
+  background-image: url('./TS/usa.png');
 }
 div.grupo div.equipo.hol div.nombre:before {
-  background-image: url('./T-shirts/hol.png');
+  background-image: url('./TS/hol.png');
 }
 div.grupo div.equipo.eug div.nombre:before {
   background-image: url(https://buckets3.glanacion.com/lntools/anexos/fotos/24/42224.svg);
 }
 div.grupo div.equipo.din div.nombre:before {
-  background-image: url('./T-shirts/din.png');
+  background-image: url('./TS/din.png');
 }
 div.grupo div.equipo.ara div.nombre:before {
-  background-image: url('./T-shirts/asa.png');
+  background-image: url('./TS/ara.png');
 }
 div.grupo div.equipo.aus div.nombre:before {
-  background-image: url('./T-shirts/aus.png');
+  background-image: url('./TS/aus.png');
 }
 div.grupo div.equipo.cri div.nombre:before {
-  background-image: url('./T-shirts/cos.png');
+  background-image: url('./TS/cri.png');
 }
 div.grupo div.equipo.gal div.nombre:before {
-  background-image: url('./T-shirts/gal.png');
+  background-image: url('./TS/gal.png');
 }
 div.grupo div.equipo input {
   position: absolute;
