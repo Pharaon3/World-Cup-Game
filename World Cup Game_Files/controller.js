@@ -24,7 +24,7 @@ function setOctavos(octavosGroupId, octavosCountryId, group, country){
   var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = countryNames[group][country - 1];
   circle.style.fill = initialCircleColor;
   // Set Cuartos Part
@@ -53,7 +53,7 @@ function setOctavosEmpty(octavosGroupId, octavosCountryId){
   var imageUrl = '';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = '';
   circle.style.fill = initialCircleColor;
   // Set Cuartos Part
@@ -146,7 +146,7 @@ function setCuartosEmpty(cuartosId){
   var imageUrl = '';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = '';
   circle.style.fill = initialCircleColor;
   setSemifinalEmpty(Math.floor(cuartosId / 2));
@@ -166,7 +166,7 @@ function setCuartosProcess(cuartosId){
   var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = countryNames[group][country - 1];
   circle.style.fill = initialCircleColor;
   // Set Semifinal Part
@@ -194,7 +194,7 @@ function winSemifinal(semifinalId) {
   var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = winnerRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = countryNames[group][country - 1];
   circle.style.fill = winnerCircleColor;
   loseSemifinal(opSemifinalId);
@@ -223,7 +223,7 @@ function setSemifinalEmpty(semifinalId) {
   var imageUrl = '';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = '';
   circle.style.fill = initialCircleColor;
   // Set Final Part
@@ -248,7 +248,7 @@ function setSemifinalProcess(semifinalId) {
   var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = countryNames[group][country - 1];
   circle.style.fill = initialCircleColor;
   // Set Final Part
@@ -276,10 +276,33 @@ function winFinal(finalId) {
   var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = winnerRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = countryNames[group][country - 1];
   circle.style.fill = winnerCircleColor;
   loseFinal(opFinalId);
+  // First Color
+  rectangle.style.fill = firstRectColor;
+  text.style.fill = firstTextColor;
+  var semifinalElement = getSemifinalElement(semifinalId);
+  rectangle = semifinalElement.getElementsByTagName("rect")[0];
+  text = semifinalElement.getElementsByTagName("text")[0];
+  rectangle.style.fill = firstRectColor;
+  text.style.fill = firstTextColor;
+  var cuartosElement = getCuartosElement(cuartosId);
+  rectangle = cuartosElement.getElementsByTagName("rect")[0];
+  text = cuartosElement.getElementsByTagName("text")[0];
+  rectangle.style.fill = firstRectColor;
+  text.style.fill = firstTextColor;
+  var octavosElement = getOctavosElement(cuartosId, octavosWinner[cuartosId]);
+  rectangle = octavosElement.getElementsByTagName("rect")[0];
+  text = octavosElement.getElementsByTagName("text")[0];
+  rectangle.style.fill = firstRectColor;
+  text.style.fill = firstTextColor;
+  var championCountry = countryFullNames[group][country - 1];
+  var championString = document.getElementById('champion');
+  championString.innerHTML = '¡' + championCountry;
+  document.getElementById('champions').style.display = 'block';
+  document.getElementById('worldcup').style.opacity = 1;
 }
 function loseFinal(finalId) {
   var finalElement = getFinalElement(finalId);
@@ -287,6 +310,19 @@ function loseFinal(finalId) {
   var circle = finalElement.getElementsByTagName("circle")[0];
   rectangle.style.fill = loserRectColor;
   circle.style.fill = loserCircleColor;
+  // Second Color
+  rectangle.style.fill = secondRectColor;
+  var semifinalId = semifinalWinner[finalId];
+  var semifinalElement = getSemifinalElement(semifinalId);
+  rectangle = semifinalElement.getElementsByTagName("rect")[0];
+  rectangle.style.fill = secondRectColor;
+  var cuartosId = cuartosWinner[semifinalId];
+  var cuartosElement = getCuartosElement(cuartosId);
+  rectangle = cuartosElement.getElementsByTagName("rect")[0];
+  rectangle.style.fill = secondRectColor;
+  var octavosElement = getOctavosElement(cuartosId, octavosWinner[cuartosId]);
+  rectangle = octavosElement.getElementsByTagName("rect")[0];
+  rectangle.style.fill = secondRectColor;
 }
 function setFinalEmpty(finalId) {
   var finalElement = getFinalElement(finalId);
@@ -298,7 +334,7 @@ function setFinalEmpty(finalId) {
   var imageUrl = '';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = '';
   circle.style.fill = initialCircleColor;
 }
@@ -319,7 +355,7 @@ function setFinalProcess(finalId) {
   var imageUrl = './World Cup Game_Files/TS/' + countryNames[group][country - 1] + '.png';
   rectangle.style.fill = initialRectColor;
   image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageUrl);
-  text.style.color = "#000";
+  text.style.fill = textColor;
   text.innerHTML = countryNames[group][country - 1];
   circle.style.fill = initialCircleColor;
 }

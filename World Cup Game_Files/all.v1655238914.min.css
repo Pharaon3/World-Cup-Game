@@ -93,7 +93,7 @@ video {
   font-weight: inherit;
   font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font-family: CircularStd-Black;
   vertical-align: baseline;
 }
 :focus {
@@ -125,7 +125,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: CircularStd-Black, Helvetica, sans-serif;
 }
 ol,
 ul {
@@ -493,7 +493,7 @@ div.close {
   background-repeat: no-repeat;
 }
 section {
-  margin: 10px 0;
+  /*margin: 10px 0;*/
 }
 section#grupos {
   padding: 0 30px;
@@ -502,7 +502,7 @@ section#grupos {
 section#llave {
   box-sizing: border-box;
   position: relative;
-  margin-top: 50px;
+  margin-top: 20px;
   opacity: 0;
 }
 section#llave svg {
@@ -512,7 +512,7 @@ section#llave svg {
   display: block;
 }
 section#llave svg text {
-  font-family: suecananobold !important;
+  font-family: CircularStd-Black !important;
 }
 section#llave svg #fechas.etapa text,
 section#llave svg #redes text {
@@ -696,8 +696,9 @@ div.grupo div.equipo div.nombre {
   display: inline-block;
   padding: 8px 0 8px 40px;
   color: #fff;
-  font-family: suecananolight;
+  font-family: 'CircularStd-Book';
   letter-spacing: -0.02rem;
+  font-size: 12.79pt;
 }
 div.grupo div.equipo div.nombre:before {
   content: "";
@@ -711,7 +712,7 @@ div.grupo div.equipo div.nombre:before {
   border-radius: 50%;
 }
 div.grupo div.equipo div.nombre.active {
-  font-family: suecananobold;
+  font-family: CircularStd-Black;
   color: #4b1522;
   letter-spacing: -0.02rem;
 }
@@ -855,12 +856,12 @@ div.grupo div.equipo .check2 {
 }
 div.grupo div.equipo input[class="radio1"]:checked ~ .check {
   /*border: 4px solid #fff;*/
-  background-color: #ffb715;
+  background-color: #f9b419;
   cursor: default;
 }
 div.grupo div.equipo input[class="radio2"]:checked ~ .check2 {
   /*border: 4px solid #fff;*/
-  background-color: #00c5ff;
+  background-color: #00c5fa;
   cursor: default;
 }
 div.grupo div.equipo.cabezal {
@@ -873,9 +874,9 @@ div.grupo div.equipo.cabezal div.nombre {
   width: 72%;
   padding-left: 0;
   text-transform: uppercase;
-  font-family: suecaslabbold;
+  font-family: CircularStd-Black;
   color: #fff;
-  font-size: 19px;
+  font-size: 17.57pt;
   padding-bottom: 10px;
 }
 @media (max-width: 414px) {
@@ -891,7 +892,7 @@ div.grupo div.equipo.cabezal div.nombre:before {
 }
 div.grupo div.equipo.cabezal div.puestos {
   width: 28%;
-  display: inline-block;
+  display: flex;
   color: #fff;
   text-align: center;
   position: relative;
@@ -900,12 +901,12 @@ div.grupo div.equipo.cabezal div.puestos {
 div.grupo div.equipo.cabezal div.puestos:after {
   content: "";
   width: 1px;
-  height: 156px;
+  height: 168px;
   background-color: #ede8e9;
   position: absolute;
   top: 0;
   left: 46%;
-  border-right: 1px dotted #4b1522;
+  /*border-right: 1px dotted #4b1522;*/
 }
 div.login #step1,
 div.nombreShare {
@@ -915,8 +916,9 @@ div.nombreShare {
 }
 div.grupo div.equipo.cabezal div.puestos div.num {
   display: inline-block;
-  margin: 0 12%;
-  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 12%;
+  font-size: 17.57pt;
 }
 div.grupo div.equipo.active div.nombre {
   font-family: suecaslabbold, georgia;
@@ -1394,3 +1396,12 @@ div.logo-ln {
   }
 }
 /*# sourceMappingURL=all.v1655238914.min.css.map */
+@font-face {
+  font-family: "CircularStd-Black";
+  src: url("./CircularStd-Black.ttf");
+}
+
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url("./CircularStd-Book.ttf");
+}
