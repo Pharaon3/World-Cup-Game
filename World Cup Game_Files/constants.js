@@ -19,3 +19,5 @@ var initialCircleColor = "#fff";
 var leagueWinner = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],];
 var octavosWinner = [-1, -1, -1, -1, -1, -1, -1, -1];
 var cuartosWinner = [-1, -1, -1, -1];
+var semifinalWinner = [-1, -1];
+var finalWinner = [-1];
