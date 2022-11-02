@@ -1115,6 +1115,7 @@ div.login #step1 a.btnLog {
 }
 .flickity-viewport {
   transition: height 0.2s;
+  padding-bottom: 15px;
 }
 .flickity-prev-next-button {
   top: 65%;
@@ -1327,7 +1328,7 @@ div.logo-ln {
 }
 @media screen and (max-width: 414px) {
   .container {
-    margin-top: -13px;
+    margin-top: 2px;
   }
   section#grupos {
     background-color: #ede8e9;
